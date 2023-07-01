@@ -1,4 +1,4 @@
-import { NavLink } from './NavLink';
+import { NavLink } from './NavLink'
 
 interface FooterProps {
   NavLinks: { name: string; to: string }[]
