@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import ProductImage from '../../../public/home-image.png'
-import { DefaultButton } from '../DefaultButton'
+import { DefaultButton } from '../../DefaultButton'
+import { ProductCircle } from './ProductCircle'
 
 export function HomeSection() {
   return (
@@ -14,18 +13,10 @@ export function HomeSection() {
             Nem sempre precisamos abrir mão do conforto, abrace nossa iniciativa
             e adquira seu mais novo tênis
           </p>
-          <DefaultButton text="Ver Produtos" to="/#products" />
+          <DefaultButton text="Ver Produtos" to="/#product" />
         </div>
 
-        <div className="rounded-full bg-loyal-500 2xl:relative 2xl:-bottom-[100px] 2xl:-right-[280px] 2xl:w-[900px] 2xl:h-[900px]">
-          <Image
-            src={ProductImage}
-            alt="Imagem ilustrativa do nosso tênis"
-            width={800}
-            height={800}
-            className=""
-          />
-        </div>
+        <ProductCircle />
       </div>
     </section>
   )

@@ -12,12 +12,16 @@ export const metadata = {
 const NavLinks = [
   { name: 'Home', to: '/#home' },
   { name: 'Sobre', to: '/#about' },
-  { name: 'Produtos', to: '/#products' },
-  { name: 'Contato', to: '/#contact' },
+  { name: 'Produto', to: '/#product' },
+  { name: 'Contato', to: 'https://www.instagram.com/loyalesporte/' },
 ]
 
 const UtilLinks = [
   { name: 'Instagram', to: 'https://www.instagram.com/loyalesporte/' },
+  {
+    name: 'Código no GitHub',
+    to: 'https://github.com/Artur-Poffo/Loyal-Sports',
+  },
 ]
 
 export default function RootLayout({ children }: { children: ReactNode }) {
